@@ -45,7 +45,7 @@ plots.style.use('fivethirtyeight')
 
     TypeError                                 Traceback (most recent call last)
 
-    <ipython-input-49-844384295a7d> in <module>()
+    <ipython-input-19-844384295a7d> in <module>()
     ----> 1 '2.3' + 4
     
 
@@ -98,7 +98,7 @@ int('2.3')
 
     ValueError                                Traceback (most recent call last)
 
-    <ipython-input-53-60c0fa88ab20> in <module>()
+    <ipython-input-23-60c0fa88ab20> in <module>()
     ----> 1 int('2.3')
     
 
@@ -150,8 +150,6 @@ int(str(x) + '0')
 
 ## Minard's map
 
-
-Can be downloaded from https://www.inferentialthinking.com/notebooks/minard.csv
 
 ```python
 minard = Table.read_table('minard.csv')
@@ -713,6 +711,36 @@ np.arange(0, 4)
 ```python
 minard.take(np.arange(0,4))
 ```
+
+
+
+
+<table border="1" class="dataframe">
+    <thead>
+        <tr>
+            <th>Longitude</th> <th>Latitude</th> <th>City</th> <th>Direction</th> <th>Survivors</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>32       </td> <td>54.8    </td> <td>Smolensk   </td> <td>Advance  </td> <td>145000   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>33.2     </td> <td>54.9    </td> <td>Dorogobouge</td> <td>Advance  </td> <td>140000   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>34.4     </td> <td>55.5    </td> <td>Chjat      </td> <td>Advance  </td> <td>127100   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>37.6     </td> <td>55.8    </td> <td>Moscou     </td> <td>Advance  </td> <td>100000   </td>
+        </tr>
+    </tbody>
+</table>
+
+
 
 <br><br><br><br><br><br><br><br><br><br><br><br>
 
