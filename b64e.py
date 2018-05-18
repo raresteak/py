@@ -8,13 +8,15 @@ textToEncode = pyperclip.paste()   # Take clipboard contents and put it into var
 
 if len(sys.argv)-1 != 1:
 	print("Usage error: call script.py number   where number is number of times to encode")	
+    # Ensure script was called with an argument
 	sys.exit()
-elif len(textToEncode) < 1:
+elif len(textToEncode) < 1: # Ensure there's text on the clipboard
     print("Usage error")
     print("Place text on clipboard before calling program")
     print("Call script.py with one argument, number for number of times to encode")
 
 timesToEncode = sys.argv[1]
+
 
 def myB64encoder(aString):
     ''' Function to encode some text a number of times '''
