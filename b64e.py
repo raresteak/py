@@ -7,9 +7,8 @@ import sys, base64, pyperclip
 textToEncode = pyperclip.paste()   # Take clipboard contents and put it into variable
 
 if len(sys.argv)-1 != 1:
-	print("Usage error: call script.py number   where number is number of times to encode")	
-    # Ensure script was called with an argument
-	sys.exit()
+    print("No argument specified, defaulting to 1 encoding.")
+    sys.argv.append('1')
 elif len(textToEncode) < 1: # Ensure there's text on the clipboard
     print("Usage error")
     print("Place text on clipboard before calling program")
