@@ -20,6 +20,8 @@ try:
     os.remove(testFile)
 except PermissionError:
     pass
+except OSError:
+    pass
 
 for (root, dirs, files) in os.walk(path):
     for dir in enumerate(dirs):
