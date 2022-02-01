@@ -1,4 +1,4 @@
-One liner printing an List of tuples
+One liner printing a List of tuples
 
 ```
 myListOfTuples=[('a','b','c'),('d','e','f')]
@@ -15,4 +15,5 @@ print('\n'.join(str(x) for x in myListOfTuples))
 ```
 
 ('a', 'b', 'c')
+
 ('d', 'e', 'f')
